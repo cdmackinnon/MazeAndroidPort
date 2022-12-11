@@ -13,3 +13,6 @@
 ## Functionality
 
 Runs on Google Pixel 6 using Level 32 API. Coded through Android Studio. 
+
+## Misc
+* Added Screenshots on several of the play states
