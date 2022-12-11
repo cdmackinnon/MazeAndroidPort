@@ -1,6 +1,6 @@
 # MazeAndroidPort
 
-##Android/Mobile Version of the [Java Maze Game](https://github.com/cdmackinnon/JavaMaze). 
+## Android/Mobile Version of the [Java Maze Game](https://github.com/cdmackinnon/JavaMaze). 
 
 * Added Mobile UI with graphics
 * Added aesthetic Labyrinth theme for user immersion
