@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".gui.Activities.PlayManuallyActivity">
+
+    <com.example.amazebyconnormackinnon.gui.GameInterface.MazePanel
+        android:id="@+id/MazePanel"
+        android:layout_width="382dp"
+        android:layout_height="352dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.482"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.379" />
+
+    <ImageButton
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="300dp"
+        android:layout_marginBottom="650dp"
+        android:minHeight="48dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="?attr/actionModeCloseDrawable"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <Button
+        android:id="@+id/WallButton"
+        android:layout_width="180dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="12dp"
+        android:text="@string/Show"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fullMazeButton" />
+
+    <Button
+        android:id="@+id/fullMazeButton"
+        android:layout_width="203dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="650dp"
+        android:text="@string/FullMaze"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.187"
+        app:layout_constraintStart_toEndOf="@+id/back"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.484" />
+
+    <Button
+        android:id="@+id/solutionButton"
+        android:layout_width="180dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="5dp"
+        android:text="@string/Solution"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/WallButton"
+        app:layout_constraintTop_toBottomOf="@+id/fullMazeButton" />
+
+    <ImageButton
+        android:id="@+id/Zoom_In"
+        android:layout_width="53dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="52dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.955"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/solutionButton"
+        app:srcCompat="@drawable/plus_sign" />
+
+    <ImageButton
+        android:id="@+id/Zoom_Out"
+        android:layout_width="52dp"
+        android:layout_height="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.952"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Zoom_In"
+        app:srcCompat="@drawable/minus_icon" />
+
+
+<!--    <Button-->
+<!--        android:id="@+id/Win"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginStart="292dp"-->
+<!--        android:layout_marginEnd="25dp"-->
+<!--        android:layout_marginBottom="152dp"-->
+<!--        android:text="@string/Win"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.833"-->
+<!--        app:layout_constraintStart_toStartOf="parent" />-->
+
+<!--    <Button-->
+<!--        android:id="@+id/lose"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginStart="292dp"-->
+<!--        android:layout_marginEnd="25dp"-->
+<!--        android:layout_marginBottom="96dp"-->
+<!--        android:text="@string/Lose"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.411"-->
+<!--        app:layout_constraintStart_toStartOf="parent" />-->
+
+
+    <ImageButton
+        android:id="@+id/pause"
+        android:layout_width="63dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toStartOf="@+id/Zoom_In"
+        app:layout_constraintHorizontal_bias="0.017"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/WallButton"
+        app:srcCompat="@android:drawable/ic_media_pause"
+        tools:ignore="SpeakableTextPresentCheck,ImageContrastCheck" />
+
+    <TextView
+        android:id="@+id/PathLen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="356dp"
+        android:layout_marginEnd="125dp"
+        android:layout_marginBottom="110dp"
+        android:text="@string/Energy"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.05"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pause"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageView
+        android:id="@+id/robot"
+        android:layout_width="64dp"
+        android:layout_height="54dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.518"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.955"
+        app:srcCompat="@drawable/robot"
+        tools:ignore="ImageContrastCheck" />
+
+    <Button
+        android:id="@+id/ForwardSensor"
+        android:layout_width="63dp"
+        android:layout_height="14dp"
+        android:layout_marginTop="508dp"
+        android:layout_marginEnd="44dp"
+        android:backgroundTint="#17CD1E"
+        android:scrollbarAlwaysDrawHorizontalTrack="false"
+        android:scrollbarAlwaysDrawVerticalTrack="false"
+        android:textColor="#4CAF50"
+        android:textColorHighlight="#4CAF50"
+        android:textColorHint="#4CAF50"
+        android:textColorLink="#4CAF50"
+        app:iconTint="#4BAF50"
+        app:layout_constraintBottom_toTopOf="@+id/robot"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.595"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/WallButton"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+    <Button
+        android:id="@+id/BackSensor"
+        android:layout_width="63dp"
+        android:layout_height="14dp"
+        android:layout_marginStart="180dp"
+        android:layout_marginEnd="168dp"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="#17CD1E"
+        android:scrollbarAlwaysDrawHorizontalTrack="false"
+        android:scrollbarAlwaysDrawVerticalTrack="false"
+        android:textColor="#4CAF50"
+        android:textColorHighlight="#4CAF50"
+        android:textColorHint="#4CAF50"
+        android:textColorLink="#4CAF50"
+        app:iconTint="#4BAF50"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/robot"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+    <Button
+        android:id="@+id/LeftSensor"
+        android:layout_width="50dp"
+        android:layout_height="14dp"
+        android:layout_marginStart="148dp"
+        android:layout_marginEnd="17dp"
+        android:backgroundTint="#17CD1E"
+        android:rotation="-90"
+        android:scrollbarAlwaysDrawHorizontalTrack="false"
+        android:scrollbarAlwaysDrawVerticalTrack="false"
+        android:textColor="#4CAF50"
+        android:textColorHighlight="#4CAF50"
+        android:textColorHint="#4CAF50"
+        android:textColorLink="#4CAF50"
+        app:iconTint="#4BAF50"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/robot"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.927"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <Button
+        android:id="@+id/RightSensor"
+        android:layout_width="50dp"
+        android:layout_height="14dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginEnd="138dp"
+        android:layout_marginBottom="52dp"
+        android:backgroundTint="#17CD1E"
+        android:rotation="-90"
+        android:scrollbarAlwaysDrawHorizontalTrack="false"
+        android:scrollbarAlwaysDrawVerticalTrack="false"
+        android:textColor="#4CAF50"
+        android:textColorHighlight="#4CAF50"
+        android:textColorHint="#4CAF50"
+        android:textColorLink="#4CAF50"
+        app:iconTint="#4BAF50"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.894"
+        app:layout_constraintStart_toEndOf="@+id/robot"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <SeekBar
+        android:id="@+id/speed"
+        android:layout_width="290dp"
+        android:layout_height="21dp"
+        app:layout_constraintBottom_toTopOf="@+id/ForwardSensor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/MazePanel"
+        app:layout_constraintVertical_bias="0.362" />
+
+    <TextView
+        android:id="@+id/AnimationSpeed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="@string/Animation"
+        app:layout_constraintBottom_toTopOf="@+id/seekBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.09"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/MazePanel"
+        app:layout_constraintVertical_bias="0.19999999" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

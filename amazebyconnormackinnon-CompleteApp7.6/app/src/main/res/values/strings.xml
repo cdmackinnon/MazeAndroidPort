@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">AMazeByConnorMacKinnon</string>
+    <string name="title">The Labyrinth</string>
+    <string name="Disable_Rooms">Disable Rooms</string>
+    <string name="Algorithm"> Algorithm:</string>
+    <string name="DFS"> DFS </string>
+    <string name="Boruvka"> Boruvka </string>
+    <string name="Prim"> Prim </string>
+    <string name="Difficulty"> Difficulty </string>
+    <string name="Explore">Explore</string>
+    <string name="Revisit"> Revisit </string>
+    <string name="Wall_Shift"> THE WALLS ARE SHIFTING </string>
+
+    <string name="Driver"> Select Driver Type: </string>
+    <string name="Manual"> Manual </string>
+    <string name="Wizard"> Wizard </string>
+    <string name="WallFollower"> Wall Follower </string>
+
+    <string name="Quality"> Select Robot Quality: </string>
+    <string name="Premium"> Premium </string>
+    <string name="Mediocre"> Mediocre </string>
+    <string name="SoSo"> So-So </string>
+    <string name="Shaky"> Shaky </string>
+
+    <string name="Show"> Show Walls </string>
+    <string name="FullMaze"> Show Full Maze </string>
+    <string name="Solution"> Show Solution </string>
+
+    <string name="Win">You Win </string>
+    <string name="Lose">You Lose </string>
+
+    <string name="Jump">Jump</string>
+
+    <string name="Animation">Animation Speed</string>
+
+    <string name="Energy">Energy: 0</string>
+    <string name="Pathlen">Path Length: 0 </string>
+    <string name="Optimal">Optimal Length:0</string>
+
+
+</resources>

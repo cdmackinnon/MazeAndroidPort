@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".gui.Activities.GeneratingActivity"
+    android:background="@drawable/generate"
+    >
+
+    <TextView
+        android:id="@+id/Wall_Shift"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="500dp"
+        android:text="@string/Wall_Shift"
+        android:textColor="#EA6D6D"
+        android:textSize="60sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.125"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.337" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="303dp"
+        android:layout_height="95dp"
+        android:layout_marginTop="46dp"
+        android:layout_marginBottom="450dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Wall_Shift" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="140dp"
+        android:layout_height="32dp"
+        android:textColor="#EA6D6D"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="28dp"
+        android:text="@string/Driver"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/progressBar" />
+
+    <RadioGroup
+        android:id="@+id/driverGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView5">
+
+        <RadioButton
+            android:id="@+id/Manual"
+            android:layout_width="90dp"
+            android:layout_height="48dp"
+            android:textColor="#EA6D6D"
+            android:text="@string/Manual"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+        <RadioButton
+            android:id="@+id/Wizard"
+            android:layout_width="90dp"
+            android:layout_height="48dp"
+            android:textColor="#EA6D6D"
+            android:text="@string/Wizard"
+            app:layout_constraintStart_toEndOf="@+id/Manual"
+            tools:layout_editor_absoluteY="222dp" />
+
+        <RadioButton
+            android:id="@+id/Wall_Follower"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:text="@string/WallFollower"
+            android:textColor="#EA6D6D"
+            app:layout_constraintStart_toEndOf="@+id/Wizard"
+            tools:layout_editor_absoluteY="222dp" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/robotQuality"
+        android:layout_width="140dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="28dp"
+        android:text="@string/Quality"
+        android:textColor="#EA6D6D"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView5"
+        app:layout_constraintTop_toBottomOf="@+id/progressBar" />
+
+    <RadioGroup
+        android:id="@+id/qualityGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="200dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/driverGroup"
+        app:layout_constraintTop_toBottomOf="@+id/robotQuality"
+        app:layout_constraintVertical_bias="0.0">
+
+        <RadioButton
+            android:id="@+id/PremiumButton"
+            android:layout_width="130dp"
+            android:layout_height="48dp"
+            android:text="@string/Premium"
+            android:textColor="#EA6D6D"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/robotQuality" />
+
+        <RadioButton
+            android:id="@+id/MediocreButton"
+            android:layout_width="130dp"
+            android:layout_height="48dp"
+            android:textColor="#EA6D6D"
+            android:text="@string/Mediocre"
+            app:layout_constraintStart_toEndOf="@+id/Manual"
+            tools:layout_editor_absoluteY="222dp" />
+
+        <RadioButton
+            android:id="@+id/SoSoButton"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:textColor="#EA6D6D"
+            android:text="@string/SoSo"
+            app:layout_constraintStart_toEndOf="@+id/Wizard"
+            tools:layout_editor_absoluteY="222dp" />
+
+        <RadioButton
+            android:id="@+id/ShakyButton"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:textColor="#EA6D6D"
+            android:text="@string/Shaky"
+            app:layout_constraintStart_toEndOf="@+id/Wizard"
+            tools:layout_editor_absoluteY="222dp" />
+    </RadioGroup>
+
+    <ImageButton
+        android:id="@+id/backButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="350dp"
+        app:layout_constraintBottom_toTopOf="@+id/Wall_Shift"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="?attr/actionModeCloseDrawable" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
