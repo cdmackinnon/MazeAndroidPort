@@ -17,4 +17,4 @@ Runs on Google Pixel 6 using Level 32 API. Coded through Android Studio.
 ## Misc
 * Added Screenshots on several of the play states
 
-![Alt text](Manual Screenshot.png?raw=true "Optional Title")
+![Alt text](/Manual Screenshot.png?raw=true "Optional Title")
