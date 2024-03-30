@@ -19,8 +19,8 @@ Runs on Google Pixel 6 using Level 32 API. Coded through Android Studio.
 
 <p align="center">
   <img src="Manual&Wizard.gif" alt="Gameplay GIF">
+  <img src="UnreliableWallFollower.gif" alt="Gameplay GIF">
 </p>
-
 
 ## Screenshots
 
