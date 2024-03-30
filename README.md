@@ -14,5 +14,11 @@
 
 Runs on Google Pixel 6 using Level 32 API. Coded through Android Studio. 
 
-## Misc
-* Added Screenshots on several of the play states
+## Screenshots
+
+<div style="text-align:center">
+    <img src="Title%20Screenshot.png" alt="Title Screenshot" style="width:200px; margin:10px;">
+    <img src="Manual%20Screenshot.png" alt="Manual Screenshot" style="width:200px; margin:10px;">
+    <img src="Robot%20Screenshot.png" alt="Robot Screenshot" style="width:200px; margin:10px;">
+    <img src="Winning%20Screnshot.png" alt="Winning Screenshot" style="width:200px; margin:10px;">
+</div>
