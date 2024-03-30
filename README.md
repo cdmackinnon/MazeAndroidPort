@@ -14,6 +14,14 @@
 
 Runs on Google Pixel 6 using Level 32 API. Coded through Android Studio. 
 
+## Gameplay
+
+
+<p align="center">
+  <img src="Manual&Wizard.gif" alt="Gameplay GIF">
+</p>
+
+
 ## Screenshots
 
 <div style="text-align:center">
